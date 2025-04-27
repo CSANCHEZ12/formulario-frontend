@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-4 text-center">Registrar Nueva Empresa</h1>
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 ">
+                <form action="guardar.phpsi" method="POST">
+            
+                    <div class="mb-4">
+                        <label for="nombre" class="form-label">Nombre de la Empresa</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="representante_legal" class="form-label">Representante Legal</label>
+                        <input type="text" class="form-control" id="representante_legal" name="representante_legal" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="nit" class="form-label">NIT</label>
+                        <input type="text" class="form-control" id="nit" name="nit" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="categoria_empresa">Categoría de la Empresa</label>
+                        <select id="categoria_empresa" class="form-select" name="categoria_empresa" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="comida">Comida</option>
+                            <option value="turismo">Turismo</option>
+                            <option value="construccion">Construcción</option>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="salud">Salud</option>
+                            <option value="educacion">Educación</option>
+                            <option value="retail">Retail</option>
+                            <option value="energia">Energía</option>
+                            <option value="finanzas">Servicios Financieros</option>
+                            <option value="automotriz">Automotriz</option>
+                            <option value="entretenimiento">Entretenimiento</option>
+                            <option value="moda">Moda</option>
+                            <option value="inmobiliaria">Inmobiliaria</option>
+                            <option value="consultoria">Consultoría</option>
+                            <option value="agricultura">Agricultura</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-light pt-3 pb-3 mt-3">Registrar Empresa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
